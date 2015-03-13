@@ -1,0 +1,13 @@
+<div class="row">
+  <% @cases.each do |c| %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <%= link_to image_tag(c.image), c %>
+        <div class="caption">
+          <h3><%= link_to c.name, c %></h3>
+          <p><%= c.summary %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+<h3 class="page-header">
+  All Case Givers
+  <span class="pull-right">
+    <%= link_to "Add Youself as a Case Giver", new_giver_path, class: 'btn btn-sm btn-success' %>
+  </span>
+</h3>
+
+<ul>
+  <% @givers.each do |giver| %>
+    <li><%= link_to giver.name, giver_path(giver) %> <%= link_to "Edit", edit_giver_path(giver) %> <%= link_to "Delete", giver_path(giver), method: :delete, data: { confirm: 'Are you really really really sure?' } %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,36 @@
+<h1 class="title">
+  <%= @case.name %>
+</h1>
+
+<div class="row">
+  <div class="col-md-3 text-center">
+    <p><%= image_tag @case.image, class: "poster" %></p>
+    <p><strong>Topic:</strong> <%= @case.topic %></p>
+    <p><strong>Difficulty:</strong> <%=@case.difficulty %></p>
+    <p><strong>Source:</strong> <%=@case.firm.name %></p>
+     </div>
+  <div class="col-md-4 summary">
+    <h2>Summary</h2>
+    <p>
+      <%= @case.summary %>
+    </p>
+  </div>
+  <div class="col-md-3 givers">
+    <h2>Case expert:</h2>
+    <ul class="list-unstyled">
+     <li><%= link_to @giver.name, giver_path(@giver) %></li>
+      </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-7 col-md-offset-3">
+    <h3>Reviews</h3>
+    <% @case.reviews.each do |review| %>
+      <h4><%= review.user.name %> <%= stars_for(review) %></h4>
+      <p><%= review.body %></p>
+    <% end %>
+
+    <%= link_to "Write a Review", new_case_review_path(@case), class: 'btn btn-success' %>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prep with me!</title>
+  <div id="wrapper">
+    <h1>Prep with me!</h1>
+
+     <form action=mailto:<%= @giver.email %>>
+    <div class="form-group">
+        <label for="name">What's your name?</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Type your name here">
+      </div>
+      <div class="form-group">
+        <label for="subject">Which day of the week are you free?</label>
+        <select class="form-control" id="subject" name="subject">
+          <option> Case Prep This Monday</option>
+          <option>Case Prep This Tuesday</option>
+          <option>Case Prep This Wednesday</option>
+          <option>Case Prep This Thursday</option>
+          <option>Case Prep This Friday</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="body">What areas of case prep do you want to focus on?</label>
+        <textarea class="form-control" name="body" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Email me!</button>
+    </form>
+  </div></div>
+</body>
+</div>
+</html>

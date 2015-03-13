@@ -1,0 +1,45 @@
+body {
+  margin-top: 30px;
+}
+.navbar-inverse .navbar-brand {
+  font-family: 'Bangers', cursive;
+  font-size: 36px;
+  color: #704c70;
+  padding-top: 20px;
+}
+.field_with_errors input {
+  padding: 2px;
+  background-color: #ffcbca;
+  display: table;
+}
+h1.title {
+  padding: 0 30px 30px 0;
+}
+h2 {
+  font-size: 22px;
+}
+.rating {
+  font-size: 0.4em;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  padding: 4px;
+  vertical-align: middle;
+}
+.summary h2, .givers h2 {
+  margin-top: 0;
+}
+.givers li {
+  line-height: 24px;
+}
+.review {
+  margin-bottom: 30px;
+}
+.thumbnail {
+  height: 510px;
+  a > img {
+    height: 317px;
+  }
+}
+img.poster {
+  width: 240px;
+}

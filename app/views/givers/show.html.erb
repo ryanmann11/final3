@@ -1,0 +1,16 @@
+
+<div class="jumbotron">
+<h1>Hi, I'm <%= @giver.name %></h1>
+
+<%= image_tag "#{@giver.id}.jpg", style: 'width:100px' %>
+
+
+</div>
+
+<h3>I'm an expert at giving:</h3>
+
+
+<div class="well">
+      <li><%= link_to @case.name, case_path(@case) %></li>
+     </div>
+<%= link_to "Prep with me", prep_path, class: "btn btn-success" %>

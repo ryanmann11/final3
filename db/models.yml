@@ -1,0 +1,26 @@
+Case:
+  name: string
+  image: string
+  summary: text
+  difficulty: string
+  topic: string
+  firm_id: integer
+  giver_id: integer
+
+Giver:
+  name: string
+  email: string
+
+Firm:
+  name: string
+
+User:
+  email: string
+  password_digest: string
+  name: string
+
+Review:
+  case_id: integer
+  user_id: integer
+  rating: integer
+  body: text
